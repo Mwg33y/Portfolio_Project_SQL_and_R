@@ -25,7 +25,7 @@ As of January of 2022, lockdowns were completely or nearly completely lifted. Pa
 
 Non-mortgage and mortgage based Household debts also increased in Canada during the pandemic. There is more cash in the hands of Canadians today than there are goods and services available to meet demand. As a result, there has been an upward and steep trend in the consumer price index throughout 2022. This trend became more noticeable in the second quarter of 2022
 
-The Bank of Canada has responded with record increases in interest rates, in an attempt to discourage spending and borrowing, to reign inflation in. Interest rates went from 0.25% to 2.75% in the span of 5 months. 
+The Bank of Canada has responded with record increases in interest rates, in an attempt to discourage spending and borrowing, to reign inflation in. Interest rates went from 0.25% to 2.50% in the span of 6 months. 
 
 Inflation rates at 3% or lower help stimulate healthy economic growth. Lower than 2% indicates a possiblity of spiraling into deflation territory 0% or lower. A period of extended deflation can be the result of less consumer spending, a good indicator of an erosion in consumer confidence in the economy. Extended deflation or high inflation can result in panic, and a possible recession on the horizon. So a inflation rate target above 1% and below 3% is a comfortable position for the BoC.
 Show quoted text
