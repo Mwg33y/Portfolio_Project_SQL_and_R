@@ -34,6 +34,6 @@ The rate of inflation is well above this number as of August 2022, sitting at 7%
 
 
 
-What I have learned:
+What I have learned from the data:
 
 It is abundantly evident that central bank monetary policy, and increased government and consumer spending have directly contributed to the inflationary rise in the prices of goods in Canada. This has also been further emphasized after observing changes in CPI rates from 1960 to 2022. 
