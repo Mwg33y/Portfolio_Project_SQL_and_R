@@ -1,0 +1,235 @@
+
+#install packages and libraries in R for data importation,analysis, 
+#manipulation, and visualization
+
+install.packages("tidyverse")
+library(tidyverse)
+library(dplyr)
+library(ggplot2)
+
+if(!require("dplyr")){
+  install.packages("dplyr", dependencies = TRUE)
+  library(dplyr)
+}
+
+# get working directory
+getwd()
+
+#set working directoy
+setwd("C:/Users/Abdul/Desktop/DataAnalysis22/Portfolio")
+
+
+
+
+
+
+# Create tables in R from the excel csv files containing household debt,
+# consumer price index data, and bank of Canada interest rates from
+#September 2019 to August 2022. 
+
+#This platform will allow for the 
+#visualization of some this data to allow for more an understanding
+#of the effects of the fiscal decisions made by both the Federal
+#Government of Canada the Bank of Canada (BoC). Interest rates were
+#kept at record lows by the BoC, and large sums of money were 
+#indirectly lent to the Canadian government by the BoC. This money was 
+#then injected into the Canadian economy, and put into circulation.
+
+household_debt <- read.csv(
+        "C:\\Users\\Abdul\\Desktop\\DataAnalysis22\\Portfolio\\Total_household_debt_Sept2019_to_Aug2022.csv",
+        stringsAsFactors = FALSE)
+
+cpi_data <-read.csv(
+        "C:\\Users\\Abdul\\Desktop\\DataAnalysis22\\Portfolio\\CPI_Data_Canada_Sept2019_to_Aug_2022.csv",
+        stringsAsFactors = FALSE)
+  
+cpi_1960_to_2022 <- read.csv(
+  "C:\\Users\\Abdul\\Desktop\\DataAnalysis22\\Portfolio\\CPI_data_1960_to_2022.csv",
+  stringsAsFactors = FALSE)
+
+bank_of_canada_rates <-read.csv(
+        "C:\\Users\\Abdul\\Desktop\\DataAnalysis22\\Portfolio\\Bank_of_Canada_rates_Sept2019_to_Aug2022.csv",
+        stringsAsFactors = FALSE)
+
+
+gdp <-read.csv(
+  "C:\\Users\\Deka\\Desktop\\DataAnalysis22\\Portfolio\\GDP_Growth.csv",
+  stringsAsFactors = FALSE)
+
+
+
+
+#The following is a plot of the yearly changes in CPI rates from 1960
+#to 2022. data sourced from Statistics Canada. The data shows volatility
+#in CPI rates during the pandemic. This change is not as severe as
+#the period between 1970 and 1982 as seen. 
+
+cpi_1960_to_2022 %>%
+    ggplot()+
+    
+    geom_point(mapping = aes(x=Year, y=Year.over.Year.change....), 
+               color="black"
+    )+
+
+    geom_line(mapping = aes(
+                            x=Year, 
+                            y=Year.over.Year.change....,
+                            group = 1), 
+              color="black"
+     ) + 
+  
+    
+  
+    labs(
+         y="Changes in CPI (%)",
+         x="time",
+         title ="Yearly Percent increases in Consumer Price Index 1960 to 2022"
+     )
+
+
+
+
+#To stop the economy from experiencing prolonged negative growth
+#during the pandemic lockdowns, the BoC had to implement policies
+#to sustain the economy by. A positive GDP indicates growth. There
+#was a brief period during the pandemic where growth was negative,
+#however decisions made by the BoC's policieshelped the economy recover
+
+
+
+gdp %>%
+  ggplot()+
+  
+  geom_point(mapping = aes(x=Year, y=GDP.Growth), 
+             color="black"
+  )+
+  
+  geom_line(mapping = aes(
+    x=Year, 
+    y=GDP.Growth,
+    group = 1), 
+    color="black"
+  ) 
+  
+  
+  labs(
+    y="Changes in CPI (%)",
+    x="time",
+    title ="Yearly Percent increases in Consumer Price Index 1960 to 2022"
+  )
+
+
+
+
+#The following shows the changes in Bank of Canada interest rates and 
+#monthly inflation rates before and during the COVID-19 Pandemic.
+#To prevent negative GDP growth, the BoC raised interest rates.
+#Interest rates were kept low for a prolonged period during the 
+#pandemic, and resulted in an upward pressure to monthly inflation 
+#rates in 2022.
+
+
+bank_of_canada_rates %>%
+  ggplot(
+    
+  )+ 
+  geom_col(mapping = aes(x=Ref_date, y=Bank_of_Canada_rate),
+           position = "dodge", color="black", fill="purple",
+           
+           ) +theme(axis.text.x = element_text(angle = 90))+
+  
+  geom_point(mapping = aes(x=Ref_date, y=Inflation_rate), 
+             color="black"
+             ) +theme(axis.text.x = element_text(angle = 90))+
+  
+  
+  geom_line(mapping = aes(
+                        x=Ref_date, 
+                        y=Inflation_rate,
+                        group = 1), 
+            color="black"
+            ) +  theme(axis.text.x = element_text(angle = 90))+
+  
+  labs(
+    y="Bank interest rates, and monthly inflation rates (%)",
+    x="time",
+    title ="Bank rates before and during COVID-19 Pandemic"
+  )
+
+
+
+
+
+
+#The following section shows the Consumer Price Index rate of Canada 
+#and compares it with the CPI rates for Ontario and Quebec in August 
+#2022. The value is represented as a percent relative to 2002.(i.e. the 
+#CPI value in Canada was 100% in 2002, and it was 15.5% in 1960 
+#according to Statistics Canada)
+
+
+cpi_data %>%
+  ggplot(
+    
+  )+ 
+  
+  #Canada wide CPI data
+  
+  geom_point(mapping = aes(x=REF_DATE, y=Canada), 
+             color="black"
+  ) +
+  theme(axis.text.x = element_text(angle = 90))+
+  
+  
+  geom_line(mapping = aes(
+                          x=REF_DATE, 
+                          y=Canada,
+                          group = 1), 
+    color="black"
+  ) +  
+  
+  theme(axis.text.x = element_text(angle = 90))+
+  
+  #Ontario CPI data
+  
+  geom_point(mapping = aes(x=REF_DATE, y=Ontario), 
+             color="blue"
+  ) +
+  theme(axis.text.x = element_text(angle = 90))+
+  
+  
+  geom_line(mapping = aes(
+                          x=REF_DATE, 
+                          y=Ontario,
+                          group = 1), 
+            color="blue"
+  ) +  
+  
+  theme(axis.text.x = element_text(angle = 90))+
+  
+  
+
+#Quebec DPI rates
+
+  geom_point(mapping = aes(x=REF_DATE, y=Quebec), 
+           color="green"
+  ) +
+  theme(axis.text.x = element_text(angle = 90))+
+  
+  
+  geom_line(mapping = aes(
+    x=REF_DATE, 
+    y=Quebec,
+    group = 1), 
+    color="green"
+  ) +  
+  
+  theme(axis.text.x = element_text(angle = 90))+
+  
+  labs(
+    y="Inflation data, increase from 2002 (%)",
+    x="time",
+    title ="Inflation rates before and during COVID-19 Pandemic"
+  ) 
+
+
