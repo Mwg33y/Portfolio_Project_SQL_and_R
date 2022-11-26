@@ -30,7 +30,7 @@ The Bank of Canada has responded with record increases in interest rates, in an 
 Inflation rates at 3% or lower help stimulate healthy economic growth. Lower than 2% indicates a possiblity of spiraling into deflation territory 0% or lower. A period of extended deflation can be the result of less consumer spending, a good indicator of an erosion in consumer confidence in the economy. Extended deflation or high inflation can result in panic, and a possible recession on the horizon. So a inflation rate target above 1% and below 3% is a comfortable position for the BoC.
 Show quoted text
 
-The rate of inflation is well above this number as of August 2022, sitting at 7%. The BoC estimates that it takes 24 to 32 months to see it's policies take effect. This analysis stops at August 2022 before the inflation problem was resolved by the Bank of Canada, so further increases in price inflation rates are likely beyond 2022. 
+The calculate monthly rate of inflation is well above this number as of August 2022, sitting at 7%. The BoC estimates that it takes 24 to 32 months to see it's policies take effect. This analysis stops at August 2022 before the inflation problem was resolved by the Bank of Canada, so further increases in price inflation rates are likely beyond 2022. 
 
 
 
