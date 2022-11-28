@@ -7,11 +7,16 @@ I have chosen to use SQL and R to analyze and visualize the available data conce
 
 
 
-What has happened during the pandemic as far as the cost of living in Canada is concerned:
+What is inflation?
 
 Inflation is is the increase in the prices of goods and services. It is the decrease in the buying power of a unit of currency. The consumer price index (CPI) is used by governments and other institutions to measure changes in inflation. CPI is calculated by comparing the present cost of a basket of essential goods compared to the previous year. An increase in this number indicates that basic goods are getting more expensive.
 
-The Bank of Canada also monitors inflation levels by keeping track of monthly changes in the cpi. The bank uses monetary policy to keep inflation levels under control. The Bank of Canada aims to keep these monthly changes at less than 3%. 
+The Bank of Canada monitors inflation levels by keeping track of monthly changes in the cpi. The bank uses monetary policy to keep inflation levels under control. The Bank of Canada aims to keep these monthly changes at less than 3%. 
+
+
+
+Background Information:
+
 
 The COVID-19 lockdowns implemented by the Federal government of Canada, and the policies acted on by the Bank of Canada had a direct and immediate impact on the current level of price inflation. 
 
@@ -21,6 +26,12 @@ To counter-act any adverse economic effects of the lockdowns gdp growth, the BoC
 
 The federal government has spent $576 B since the beginning of the pandemic in March 2020. Also putting this money in the hands of consumers, private businesses, and commercial banks. 
  
+ 
+ 
+
+Recovery of the Canadian economy:
+
+
 As of January of 2022, lockdowns were completely or nearly completely lifted. Participation in the labour place made a very quick recovery with rapidly improved employment numbers . Currently Canada is experiencing historically low levels of unemployment.
 
 Non-mortgage and mortgage based Household debts also increased in Canada during the pandemic. There is more cash in the hands of Canadians today than there are goods and services available to meet demand. As a result, there has been an upward and steep trend in the consumer price index throughout 2022. This trend became more noticeable in the second quarter of 2022
@@ -34,6 +45,13 @@ The calculated monthly rate of inflation is well above this number as of August 
 
 
 
-What I have learned from the data:
+Findings:
 
-It is abundantly evident that central bank monetary policy, and increased government and consumer spending have directly contributed to the inflationary rise in the prices of goods in Canada. This has also been further emphasized after observing the rate change over time in the CPI from 1960 to 2022. 
+It is abundantly evident that central bank monetary policy, and increased government and consumer spending have directly contributed to the inflationary rise in the prices of goods in Canada. This has also been furtherevidenced after observing changes in retail grocery prices from September 2019 to August 2022. Looking at the rate change over time in the CPI from 1960 to 2022 has also shown that Governmnent and Bank of Canada responses to COVID-19 have definitely had an effect on inflation in Canada. 
+
+
+For more visualizations of the Data:
+
+https://public.tableau.com/app/profile/abdul4524
+
+Please refer to the above link for further visualiztions that I have made using the data that I have sourced from Statisitics Canada.
