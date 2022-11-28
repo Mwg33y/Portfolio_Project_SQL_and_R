@@ -1,13 +1,13 @@
 # Portfolio_Project_SQL_and_R
 My_Portfolio_Project
 
-Overview:
+**Overview**:
 
 I have chosen to use SQL and R to analyze and visualize the available data concerning the Consumer Price Index (CPI), and Bank of Canada interest rates. I wanted to see how the decisions made by the Federal Government of Canada, and monetary policy set by the Bank of Canada have affected the cost of living in Canada. The majority of the data that I have sourced from Statistics Canada focuses mostly on conditions and changes to CPI and interest rates between September 2019 and August 2022. I have chosen this subject because it is one of the foremost of issues that Canadians from all walks of life are dealing with today. I believe that the COVID-19 pandemic had a direct impact on the sharp increase of the cost of living that we face today in Canda. However, I believe that looking over the pertinent data will tell a more detailed and convincing story.
 
 
 
-What is inflation?
+**What is inflation?**
 
 Inflation is is the increase in the prices of goods and services. It is the decrease in the buying power of a unit of currency. The consumer price index (CPI) is used by governments and other institutions to measure changes in inflation. CPI is calculated by comparing the present cost of a basket of essential goods compared to the previous year. An increase in this number indicates that basic goods are getting more expensive.
 
@@ -15,7 +15,7 @@ The Bank of Canada monitors inflation levels by keeping track of monthly changes
 
 
 
-Background Information:
+**Background Information:**
 
 
 The COVID-19 lockdowns implemented by the Federal government of Canada, and the policies acted on by the Bank of Canada had a direct and immediate impact on the current level of price inflation. 
@@ -29,7 +29,7 @@ The federal government has spent $576 B since the beginning of the pandemic in M
  
  
 
-Recovery of the Canadian economy:
+**Recovery of the Canadian economy:**
 
 
 As of January of 2022, lockdowns were completely or nearly completely lifted. Participation in the labour place made a very quick recovery with rapidly improved employment numbers . Currently Canada is experiencing historically low levels of unemployment.
@@ -45,13 +45,13 @@ The calculated monthly rate of inflation is well above this number as of August 
 
 
 
-Findings:
+**Findings:**
 
 It is abundantly evident that central bank monetary policy, and increased government and consumer spending have directly contributed to the inflationary rise in the prices of goods in Canada. This has also been furtherevidenced after observing changes in retail grocery prices from September 2019 to August 2022. Looking at the rate change over time in the CPI from 1960 to 2022 has also shown that Governmnent and Bank of Canada responses to COVID-19 have definitely had an effect on inflation in Canada. 
 
 
-For more visualizations of the Data:
-
+**For more visualizations of the Data:
+**
 https://public.tableau.com/app/profile/abdul4524
 
 Please refer to the above link for further visualiztions that I have made using the data that I have sourced from Statisitics Canada.
