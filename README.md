@@ -49,9 +49,7 @@ The calculated monthly rate of inflation is well above this number as of August 
 
 It is abundantly evident that central bank monetary policy, and increased government and consumer spending have directly contributed to the inflationary rise in the prices of goods in Canada. This has also been furtherevidenced after observing changes in retail grocery prices from September 2019 to August 2022. Looking at the rate change over time in the CPI from 1960 to 2022 has also shown that Governmnent and Bank of Canada responses to COVID-19 have definitely had an effect on inflation in Canada. 
 
-
-**For more visualizations of the Data:
-**
+For more data visualizations:
 
 https://public.tableau.com/app/profile/abdul4524
 
