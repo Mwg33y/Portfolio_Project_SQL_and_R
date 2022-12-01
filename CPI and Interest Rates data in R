@@ -153,7 +153,7 @@ bank_of_canada_rates %>%
   labs(
     y="Bank interest rates, and monthly inflation rates (%)",
     x="time",
-    title ="Bank rates before and during COVID-19 Pandemic"
+    title ="Bank interest rates, and monthly inflation rates 2019 to 2022"
   )
 
 
@@ -229,7 +229,7 @@ cpi_data %>%
   labs(
     y="Inflation data, increase from 2002 (%)",
     x="time",
-    title ="Inflation rates before and during COVID-19 Pandemic"
+    title ="Inflation rates 2019 to 2022"
   ) 
 
 
