@@ -1,3 +1,7 @@
+--Functions and clauses used: 
+--Create Table(), avg(), WHERE,
+--ORDER BY, INNER JOIN, Distinct, Limit
+
 -- All data sourced from the Statistics Canada website 
 -- https://www150.statcan.gc.ca/n1/en/type/data?MM=1.
 
