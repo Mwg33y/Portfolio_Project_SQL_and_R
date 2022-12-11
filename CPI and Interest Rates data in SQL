@@ -28,7 +28,7 @@ digit percent value indicates a more than 100% increase in inflation
 relative to the year 2002*/
 
 CREATE TABLE  CPI_Data_Canada_Sept2019_to_Aug2022
-(REF_DATE date PRIMARY KEY,
+(	REF_DATE date PRIMARY KEY,
 	Products_and_product_groups char(20),
 	Canada double precision,
 	Newfoundland_and_Labrador double precision,
@@ -194,6 +194,104 @@ on
 	household_debt.ref_date = cpi_data_canada_sept2019_to_aug2022.ref_date
 order by 
 	household_debt.ref_date desc
+	
+	
+
+
+
+--return other column entries where the geography column contains 
+--entries beginning with the letters Can
+SELECT
+	ref_date,SUM(Outstanding_balances_for_are_auto_loans)
+FROM
+	Total_household_debt_Sept2019_to_Aug2022
+WHERE
+	geography LIKE 'Can%'
+	
+	
+	
+	
+
+--return to total outstanding balance excluding the specified date
+SELECT
+	SUM(Outstanding_balances_for_are_auto_loans)
+FROM
+	Total_household_debt_Sept2019_to_Aug2022
+WHERE
+	REF_DATE not in ('2019-09-01')
+
+
+
+
+
+
+-- instead of the full date, only return the year for each entry 
+SELECT
+	Bank_of_Canada_rate,
+	EXTRACT( year FROM REF_DATE)
+FROM
+	Bank_of_Canada_rates_Sept2019_to_Aug2022
+
+
+
+
+
+--return values above below and at the average mark
+SELECT 
+	REF_DATE, Bank_of_Canada_rate,
+CASE
+	WHEN Bank_of_Canada_rate > 2 THEN 'Above 2%'
+	WHEN Bank_of_Canada_rate < 1 THEN 'Below 1%'
+	ELSE 'in between 1% and 2%'
+END AS above_below_avg
+
+FROM
+	Bank_of_Canada_rates_Sept2019_to_Aug2022
+
+
+
+
+
+
+--both columns from the two tables should have the same exact contents
+--insert values from column1 in table2 into column1 in table1
+INSERT INTO
+	CPI_Data_Canada_Sept2019_to_Aug2022.REF_DATE
+SELECT
+	REF_DATE
+FROM 
+	Bank_of_Canada_rates_Sept2019_to_Aug2022
+WHERE
+	CPI_Data_Canada_Sept2019_to_Aug2022REF_DATE != Bank_of_Canada_rates_Sept2019_to_Aug2022.REF_DATE
+
+
+
+
+
+
+--drop and delete a column from the table
+
+Alter Table
+	Bank_of_Canada_rates_Sept2019_to_Aug2022
+Drop Column If Exists
+	Unit_of_measure
+
+
+
+
+
+--delete rows in CPI_Data_Canada_Sept2019_to_Aug2022 that has entries 
+--matching the row with the most recent date in Bank_of_Canada_rates_Sept2019_to_Aug2022
+Delete
+FROM
+	CPI_Data_Canada_Sept2019_to_Aug2022
+USING
+	Bank_of_Canada_rates_Sept2019_to_Aug2022
+WHERE
+	CPI_Data_Canada_Sept2019_to_Aug2022.REF_DATE = Max(Bank_of_Canada_rates_Sept2019_to_Aug2022.REF_DATE)
+Returning
+	PEI,Ontario, British_Columbia,Iqaluit_Nunavut
+
 	
 
 
